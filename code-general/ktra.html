@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top .hotnew {
+            position: absolute;
+            color: white;
+            background-color: orange;
+            width: 100%;
+            height: 10%;
+            top: 0;
+            left: 0;
+        }
+
+        .top .hotnew h1 {
+            padding-left: 100px;
+        }
+
+        .top .menu {
+            position: absolute;
+            background-color: red;
+            width: 100%;
+            top: 10%;
+            left: 0;
+            height: 5%;
+            padding-bottom: 10px;
+        }
+
+        .top .menu ul {
+            list-style-type: none;
+            display: flex;
+            padding-left: 90px;
+        }
+
+        .top .menu ul li {
+            color: white;
+            border-right: 1px solid white;
+            padding-right: 10px;
+            padding-left: 10px;
+
+        }
+
+        .top .menu ul li a {
+            text-decoration: none;
+            display: none;
+        }
+
+        .top .menu ul li a :hover {
+            color: white;
+            background-color: orange;
+        }
+
+        .header {
+            position: relative;
+            top: 80px;
+            width: 90%;
+            margin: 5%;
+        }
+
+        .header-1 {
+            display: flex;
+        }
+
+        .header-1-right {
+            width: 55%;
+            padding-right: 140px;
+        }
+
+        .header-1-right-d {
+            display: flex;
+            padding-bottom: 20px;
+        }
+
+        .header-1-right-d img {
+            width: 200px;
+            height: 200px;
+            padding-right: 10px;
+        }
+
+        .header-1-right-d p {
+            margin-top: 0px;
+        }
+
+        .header-1-right-d a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .header-1-left {
+            width: 50%;
+        }
+
+        .header-1-left a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .header-1-left img {
+            width: 600px;
+            height: 300px;
+        }
+
+        .header-2 {
+            padding-top: 5px;
+            display: flex;
+        }
+
+        .header-2-d {
+            width: 30%;
+            padding-right: 30px;
+        }
+
+        .header-2-d .title {
+            border-left: 3px solid orange;
+            padding-left: 10px;
+        }
+
+        .header-2-d img {
+            width: 420px;
+        }
+
+        .header-2-d a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .header-2-d .nd {
+            border-bottom: 1px solid gray;
+
+        }
+
+        .header-2-d .nd .p2 {
+            color: gray;
+            font-size: 15px;
+        }
+
+        .header-3-d {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .header-3 .title {
+            border-top: 1px solid grey;
+        }
+
+        .header-3 .title p {
+            color: gray;
+        }
+
+        .header-3 .title .sk {
+            border-left: 2px solid red;
+            padding-left: 10px;
+        }
+
+        .header-3-d .nd {
+            width: 18%;
+            padding-right: 10px;
+        }
+
+        .header-3-d .nd .last-p {
+            color: gray;
+        }
+
+        .header-3-d .nd img {
+            width: 250px;
+        }
+
+        .header-3-d .nd a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .header-4 .title {
+            border-bottom: 2px solid orange;
+            width: 100px;
+        }
+
+        .header-4 .danhmuc {
+            display: flex;
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="hotnew">
+            <h1>Hot News</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Trang chủ</li>
+                <li>Học đường
+                    <div class="content-menu">
+                        <a href="">Thi THPT</a>
+                        <a href="">Du Học</a>
+                    </div>
+                </li>
+                <li>Đời sống</li>
+                <li>Thế giới</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header-1">
+            <div class="header-1-right">
+                <div class="header-1-right-d">
+                    <img src="https://znews-photo.zingcdn.me/w660/Uploaded/qhj_yvobvhfwbv/2018_07_18/Nguyen_Huy_Binh1.jpg"
+                        alt="">
+                    <a href="">
+                        <p>Chung kết Đường lên đỉnh Olympia mùa 21 đã chính thức khép lại với chiến thắng thuộc về chàng
+                            trai đất mỏ Nguyễn Hoàng Khánh (THPT Bạch Đằng, Quảng Ninh). Trước Hoàng Khánh, Quảng Ninh
+                            còn
+                            có hai nhà vô địch là Đặng Thái Hoàng (năm 2012) và Nguyễn Hoàng Cường (năm 2018). </p>
+                    </a>
+                </div>
+                <div class="header-1-right-d">
+                    <img src="https://d1hjkbq40fs2x4.cloudfront.net/2017-08-21/files/landscape-photography_1645.jpg"
+                        alt="">
+                    <a href="">
+                        <p>Sở hữu chiều cao khá lý tưởng cùng vóc dáng chuẩn và khuôn mặt ưa nhìn, những bức ảnh của cô
+                            Hồng
+                            Đoan nhận được rất nhiều lượt yêu thích và bình luận của cư dân mạng. Trang cá nhân của cô
+                            cũng
+                            có khá nhiều lượt theo dõi. Ngoài đời, Hồng Đoan khá xinh và có phong cách nữ tính, nhẹ
+                            nhàng.
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="header-1-left">
+                <img src="https://binhdanhospital.vn/wp-content/uploads/2020/03/covid-19-con-co-kha-nang-dot-bien.jpg"
+                    alt="">
+                <a href="">
+                    <p>Sở Y tế Hà Nội ngày 17/5 thông tin 24 giờ qua thành phố ghi nhận 419 ca bệnh, giảm gần 20 ca so
+                        với
+                        hôm qua. Đã gần 1 tháng, Thủ đô không ghi nhận ca tử vong do COVID-19.</p>
+                </a>
+            </div>
+        </div>
+        <div class="header-2">
+            <div class="header-2-d">
+                <div class="title">
+                    <h3>STAR</h3>
+                </div>
+                <div class="nd">
+                    <img src="https://cdn-img.thethao247.vn/upload/glxkyn/2018/10/26/faker_2018.jpg" alt="">
+                    <a href="">
+                        <p>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc), được biết đến
+                            phổ
+                            biến với nghệ danh Faker, là một Game thủ chuyên nghiệp, thành viên, đội trưởng của đội
+                            tuyển
+                            thể thao điện tử T1 với tựa game Liên Minh Huyền Thoại.</p>
+                    </a>
+                    <a href="">
+                        <p class="p2">Trận đầu tiên ra quân dưới màu áo SKT T1 #2 tại giải đấu OGN Spring 2013,</p>
+                    </a>
+                </div>
+                <div class="nd-bottom">
+                    <a href="">
+                        <p>Anh bắt đầu sự nghiệp game thủ của mình khi chơi Warcraft III với những map như Footman
+                            Frenzy
+                            và
+                            DotA.</p>
+                        <p>Sau đó, anh chuyển sang chơi Liên Minh Huyền Thoại khi trò chơi này được phát hành tại
+                            Hàn
+                            Quốc.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="header-2-d">
+                <div class="title">
+                    <h3>ĐỜI SỐNG</h3>
+                </div>
+                <div class="nd">
+                    <img src="https://cdn-img.thethao247.vn/upload/glxkyn/2018/10/26/faker_2018.jpg" alt="">
+                    <a href="">
+                        <p>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc), được biết đến
+                            phổ
+                            biến với nghệ danh Faker, là một Game thủ chuyên nghiệp, thành viên, đội trưởng của đội
+                            tuyển
+                            thể thao điện tử T1 với tựa game Liên Minh Huyền Thoại.</p>
+                    </a>
+                    <a href="">
+                        <p class="p2">Trận đầu tiên ra quân dưới màu áo SKT T1 #2 tại giải đấu OGN Spring 2013,</p>
+                    </a>
+                </div>
+                <div class="nd-bottom">
+                    <a href="">
+                        <p>Anh bắt đầu sự nghiệp game thủ của mình khi chơi Warcraft III với những map như Footman
+                            Frenzy
+                            và
+                            DotA.</p>
+                        <p>Sau đó, anh chuyển sang chơi Liên Minh Huyền Thoại khi trò chơi này được phát hành tại
+                            Hàn
+                            Quốc.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="header-2-d">
+                <div class="title">
+                    <h3>XÃ HỘI</h3>
+                </div>
+                <div class="nd">
+                    <img src="https://cdn-img.thethao247.vn/upload/glxkyn/2018/10/26/faker_2018.jpg" alt="">
+                    <a href="">
+                        <p>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc), được biết đến
+                            phổ
+                            biến với nghệ danh Faker, là một Game thủ chuyên nghiệp, thành viên, đội trưởng của đội
+                            tuyển
+                            thể thao điện tử T1 với tựa game Liên Minh Huyền Thoại.</p>
+                    </a>
+                    <a href="">
+                        <p class="p2">Trận đầu tiên ra quân dưới màu áo SKT T1 #2 tại giải đấu OGN Spring 2013,</p>
+                    </a>
+                </div>
+                <div class="nd-bottom">
+                    <a href="">
+                        <p>Anh bắt đầu sự nghiệp game thủ của mình khi chơi Warcraft III với những map như Footman
+                            Frenzy
+                            và
+                            DotA.</p>
+                        <p>Sau đó, anh chuyển sang chơi Liên Minh Huyền Thoại khi trò chơi này được phát hành tại
+                            Hàn
+                            Quốc.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-3">
+            <div class="title">
+                <div class="sk">
+                    <p>Sự kiện</p>
+                    <h4>KQKD QUÝ 3/2022</h4>
+                </div>
+            </div>
+            <div class="header-3-d">
+                <div class="nd">
+                    <img src="https://cdn-img.thethao247.vn/upload/glxkyn/2018/10/26/faker_2018.jpg" alt="">
+                    <a href="">
+                        <p>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc), được biết đến
+                            phổ
+                            biến với nghệ danh Faker, là một Game thủ chuyên nghiệp, thành viên, đội trưởng của đội
+                            tuyển
+                            thể thao điện tử T1 với tựa game Liên Minh Huyền Thoại.</p>
+                        <p class="last-p">Faker</p>
+                    </a>
+                </div>
+                <div class="nd">
+                    <img src="https://cdn-img.thethao247.vn/upload/glxkyn/2018/10/26/faker_2018.jpg" alt="">
+                    <a href="">
+                        <p>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc), được biết đến
+                            phổ
+                            biến với nghệ danh Faker, là một Game thủ chuyên nghiệp, thành viên, đội trưởng của đội
+                            tuyển
+                            thể thao điện tử T1 với tựa game Liên Minh Huyền Thoại.</p>
+                        <p class="last-p">Faker</p>
+                    </a>
+                </div>
+                <div class="nd">
+                    <img src="https://cdn-img.thethao247.vn/upload/glxkyn/2018/10/26/faker_2018.jpg" alt="">
+                    <a href="">
+                        <p>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc), được biết đến
+                            phổ
+                            biến với nghệ danh Faker, là một Game thủ chuyên nghiệp, thành viên, đội trưởng của đội
+                            tuyển
+                            thể thao điện tử T1 với tựa game Liên Minh Huyền Thoại.</p>
+                        <p class="last-p">Faker</p>
+                    </a>
+                </div>
+                <div class="nd">
+                    <img src="https://cdn-img.thethao247.vn/upload/glxkyn/2018/10/26/faker_2018.jpg" alt="">
+                    <a href="">
+                        <p>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc), được biết đến
+                            phổ
+                            biến với nghệ danh Faker, là một Game thủ chuyên nghiệp, thành viên, đội trưởng của đội
+                            tuyển
+                            thể thao điện tử T1 với tựa game Liên Minh Huyền Thoại.</p>
+                        <p class="last-p">Faker</p>
+                    </a>
+                </div>
+                <div class="nd">
+                    <img src="https://cdn-img.thethao247.vn/upload/glxkyn/2018/10/26/faker_2018.jpg" alt="">
+                    <a href="">
+                        <p>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc), được biết đến
+                            phổ
+                            biến với nghệ danh Faker, là một Game thủ chuyên nghiệp, thành viên, đội trưởng của đội
+                            tuyển
+                            thể thao điện tử T1 với tựa game Liên Minh Huyền Thoại.</p>
+                        <p class="last-p">Faker</p>
+                    </a>
+                </div>
+                <div class="nd">
+                    <img src="https://cdn-img.thethao247.vn/upload/glxkyn/2018/10/26/faker_2018.jpg" alt="">
+                    <a href="">
+                        <p>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc), được biết đến
+                            phổ
+                            biến với nghệ danh Faker, là một Game thủ chuyên nghiệp, thành viên, đội trưởng của đội
+                            tuyển
+                            thể thao điện tử T1 với tựa game Liên Minh Huyền Thoại.</p>
+                        <p class="last-p">Faker</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-4">
+            <div class="title">
+                <h3>Xem nhiều</h3>
+            </div>
+            <div class="danh-muc">
+                <ol>
+                    <li>Lee Sang-hyeok (Hangul: 이상혁, sinh ngày 7 tháng 5 năm 1996 tại Seoul, Hàn Quốc)</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

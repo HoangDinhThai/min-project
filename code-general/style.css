@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+}
+
+.header > .header-content{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 12px 50px;
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    padding: 0 50px;
+    background-color: brown;
+}
+
+.nav > .nav-content{
+    padding: 15px;
+    font-weight: 500;
+    border-right: 1px solid white;
+}
+
+.nav > .nav-content:last-child{
+    border: none;
+}
+
+.nav > .nav-content > a{
+    text-decoration: none;
+    color: white;
+}
+
+.content-left{
+    width: 60%;
+    float: left;
+}
+
+.content-left-top{
+    display: flex;
+    width: 60%;
+    margin: 0 30px 10px 0;
+    padding: 20px 0 0 20px;
+}
+
+.content-left > .content-left-top > img{
+    width: 200px;
+}
+
+.content-left > .content-left-top > .content-left-top-content{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.content-left > .content-left-top > .content-left-top-note,
+.content-left > .content-left-top > .content-left-top-time{
+    color: #555;
+}
+
+.content-right{
+    width: 40%;
+    float: right
+}
+
+.content-right > .content-right-top > .content-right-top-content{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.content-right > .content-right-top > .content-right-top-note,
+.content-right > .content-right-top > .content-right-top-time{
+    color: #555;
+}
+
+.news-item-news-link{
+    text-decoration: none;
+    color: #555;
+}
+
+.last-content {
+    display: flex;
+    overflow: hidden;
+}
+
+.last .last-content-top {
+    border-top: 1px solid grey;
+}
+
+.last .last-content-top p {
+    color: gray;
+}
+
+.last .last-content-top .event {
+    border-left: 4px solid red;
+    padding-left: 10px;
+}
+
+.last .last-content-item {
+    width: 18%;
+    padding-right: 15px;
+}
+
+.last .last-content-item .last-final {
+    color: gray;
+}
+
+.last .last-content-item img {
+    width: 100px;
+}
+
+.last .last-content-item a {
+    text-decoration: none;
+    color: black;
+}

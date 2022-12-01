@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .dots {
+      list-style-type: none;
+    }
+
+    .font {
+      font-size: 25px;
+    }
+
+    .container {
+      border: 1px solid black;
+      border-radius: 20px;
+      padding-top: 20px;
+      width: 880px;
+      height: 230px;
+    }
+
+    .container > .tabs {
+      display: flex;
+      font-size: 25px;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 700;
+    }
+
+    .container > .tabs > li {
+      background-color: gray;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .container > .tabs > li:hover {
+      cursor: pointer;
+      opacity: 0.7;
+      color: #fff;
+      background: #000;
+    }
+
+    .container > .tabs > #new,
+    .container > .tabs > #hot,
+    .container > .tabs > #pro {
+      margin-right: 10px;
+    }
+
+    .contents {
+      border-top: 1px solid #000;
+      margin: 0 20px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <ul class="tabs dots">
+        <li id="new">Sản phẩm mới</li>
+        <li id="hot">Sản phẩm khuyến mại</li>
+        <li id="pro">Sản phẩm bán chạy</li>
+      </ul>
+
+      <div class="contents">
+        <div class="tab-new">
+          <ul class="dots font">
+            <li>Sản phẩm mới 1</li>
+            <li>Sản phẩm mới 2</li>
+            <li>Sản phẩm mới 3</li>
+          </ul>
+        </div>
+
+        <div class="tab-hot">
+          <ul class="dots font">
+            <li>Sản phẩm bán chạy 1</li>
+            <li>Sản phẩm bán chạy 2</li>
+            <li>Sản phẩm bán chạy 3</li>
+          </ul>
+        </div>
+
+        <div class="tab-pro">
+          <ul class="dots font">
+            <li>Sản phẩm khuyến mại 1</li>
+            <li>Sản phẩm khuyến mại 2</li>
+            <li>Sản phẩm khuyến mại 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function hideAll() {
+      contents = document.querySelectorAll(".contents>div");
+      for (var j = 0; j < contents.length; j++) {
+        contents[j].style.display = "none";
+      }
+    }
+
+    hideAll();
+    document.querySelectorAll(".contents>div")[0].style.display = "block";
+    tabs = document.querySelectorAll(".tabs>li");
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].onclick = function () {
+        hideAll();
+        document.querySelector(".contents>.tab-" + this.id).style.display =
+          "block";
+      };
+    }
+
+    tabs = document.querySelectorAll(".contents>p");
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].onclick = function () {
+        contents = document.querySelectorAll(".contents>div");
+        for (var j = 0; j < contents.length; j++) {
+          contents[j].style.display = "none";
+        }
+
+        document.querySelectorAll(".contents>.tab-" + this.id).style.display =
+          "none";
+      };
+    }
+  </script>
+</html>

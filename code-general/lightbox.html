@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .mainpicture {
+      width: 700px;
+      margin: 20px auto;
+    }
+
+    .mainpicture > img {
+      width: 100%;
+      height: 350px;
+      cursor: pointer;
+    }
+
+    .colors {
+      text-align: center;
+    }
+
+    .colors > img {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      border: 2px solid red;
+    }
+
+    a[rel*="black"] {
+      background-color: black;
+    }
+
+    a[rel*="red"] {
+      background-color: red;
+    }
+
+    a[rel*="blue"] {
+      background-color: blue;
+    }
+
+    a[rel*="brown"] {
+      background-color: brown;
+    }
+
+    a[rel*="gray"] {
+      background-color: gray;
+    }
+
+    .lightbox {
+      display: none;
+    }
+
+    .lightbox > div {
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.7;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      cursor: pointer;
+    }
+
+    .lightbox > img {
+      width: 70%;
+      position: fixed;
+      left: 15%;
+      z-index: 120;
+      top: 50px;
+    }
+  </style>
+
+  <body>
+    <div class="mainpicture">
+      <img src="./assets/car/kona-black.jpg" alt="" />
+      <div class="colors">
+        <img src="./assets/car/kona-black.jpg" alt="" />
+        <img src="./assets/car/kona-red.jpg" alt="" />
+        <img src="./assets/car/kona-blue.jpg" alt="" />
+        <img src="./assets/car/kona-brown.jpg" alt="" />
+        <img src="./assets/car/kona-gray.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="lightbox">
+      <div></div>
+      <img src="" alt="" />
+    </div>
+
+    <script>
+      var colors = document.querySelectorAll(".colors>img");
+      for (var i = 0; i < colors.length; i++) {
+        colors[i].onmouseover = function (e) {
+          e.preventDefault();
+          var mainimg = document.querySelectorAll(".mainpicture>img")[0];
+          mainimg.src = this.src;
+        };
+      }
+
+      var mainimg = document.querySelectorAll(".mainpicture>img")[0];
+      mainimg.onclick = function () {
+        var lightbox = document.querySelectorAll(".lightbox")[0];
+        lightbox.style.display = "block";
+        lightbox.getElementsByTagName("img")[0].src = this.src;
+        lightbox.getElementsByTagName("div")[0].onclick = function () {
+          lightbox.style.display = "none";
+        };
+      };
+    </script>
+  </body>
+</html>
