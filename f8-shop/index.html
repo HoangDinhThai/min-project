@@ -35,7 +35,7 @@
     <div class="app">
       <header class="header">
         <div class="grid wide">
-          <nav class="header__navbar">
+          <nav class="header__navbar hide-on-mobile-tablet">
             <ul class="header__navbar-list">
               <li
                 class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate"
@@ -207,7 +207,13 @@
 
           <!-- Header with search -->
           <div class="header-with-search">
-            <div class="header__logo">
+            <label for="mobile-search-checkbox" class="header__mobile-search">
+              <i
+                class="header__mobile-search-icon fa-solid fa-magnifying-glass"
+              ></i
+            ></label>
+
+            <div class="header__logo hide-on-tablet">
               <a href="/" class="header__logo-link">
                 <svg viewBox="0 0 192 65" class="header__logo-img">
                   <g fill-rule="evenodd">
@@ -219,6 +225,13 @@
                 </svg>
               </a>
             </div>
+
+            <input
+              type="checkbox"
+              hidden
+              id="mobile-search-checkbox"
+              class="header__search-checkbox"
+            />
 
             <div class="header__search">
               <div class="header__search-input-wrap">
@@ -475,6 +488,20 @@
             </div>
           </div>
         </div>
+        <ul class="header__sort-bar">
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Liên quan</a>
+          </li>
+          <li class="header__sort-item header__sort-item--active">
+            <a href="" class="header__sort-link">Mới nhất</a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Bán chạy</a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Giá</a>
+          </li>
+        </ul>
       </header>
 
       <div class="app__container">
@@ -504,7 +531,7 @@
             </div>
 
             <div class="grid__column-10">
-              <div class="home-filter">
+              <div class="home-filter hide-on-mobile-tablet">
                 <span class="home-filter__label">Sắp xếp theo</span>
                 <button class="home-filter__btn btn">Phổ biến</button>
                 <button class="home-filter__btn btn btn--primary">
